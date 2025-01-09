@@ -11,15 +11,13 @@ public class Main {
         // Exercise 2
         clientOS = 0;
         int clientDeviceYear = 2015;
-        if (clientDeviceYear >= 2015) {
-            if (clientOS == 0) {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-            else if (clientOS == 1) {
+        if (clientDeviceYear >= 2015 && clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }
+        else if (clientDeviceYear >= 2015 && clientOS == 1) {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
-        }
-        else if (clientOS == 0) {
+        else if (clientDeviceYear < 2015 && clientOS == 0) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
         else {
